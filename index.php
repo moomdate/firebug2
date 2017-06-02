@@ -54,12 +54,9 @@
 		<div class="ui segment" id="provider">
 			<h3 class="ui header">Provider</h3>
 			<div class="ui  segment">
-				<p></p>
-				<div class="ui inverted divider"></div>
-				<p></p>
-				<h4 class="ui horizontal inverted divider">
-					Horizontal
-				</h4>
+				<div class="ui small image">
+				<img src="13413073_1612514969062012_2347532119015175250_n.jpg">
+				<p>xxx</p>
 			</div>
 		</div>
 		<div class="ui segment" id="mycontent">Content</div>

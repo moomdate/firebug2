@@ -45,7 +45,9 @@
 				<div class="ui inverted divider"></div>
 				<p></p>
 				<h4 class="ui horizontal inverted divider" >
-					Horizontal<h2 id = 'head'></h2>
+					Horizontal
+					<h2 id = 'head'></h2>
+					
 				</h4>
 			</div>
 		</div>

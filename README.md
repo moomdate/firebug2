@@ -2,4 +2,8 @@
 
 *** Last night Project ***
 ---------------------------
-"code"
+```javascript
+var เผาหัว = window.onbeforeunload;
+console.log("ตายแพพ");
+};
+```

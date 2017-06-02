@@ -9,6 +9,11 @@
 	<title>FireBug</title>
 </head>
 <body>
+
+	<h1 id='head'></h1>
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+	<script type="text/javascript" src='js/firebase_servie.js'></script>
+
 	<div class="ui top fixed menu">
 		<div class="item">
 			<img src="/images/logo.png">
@@ -61,5 +66,6 @@
 		<div class="ui segment" id="mycontent">Content</div>
 	</div>
 </div>
+
 </body>
 </html>

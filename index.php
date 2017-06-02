@@ -33,9 +33,8 @@
 				<p></p>
 				<div class="ui inverted divider"></div>
 				<p></p>
-				<h4 class="ui horizontal inverted divider">
-					Horizontal
-				</h4>
+				<h4 class="ui horizontal inverted divider"></h4>
+				<p><button class="ui button red">xxx</button></p>
 			</div>
 
 		</div>

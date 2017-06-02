@@ -1,4 +1,4 @@
-console.log("hellooo");
+console.log("helloo");
 (function(){
     var config = {
     apiKey: "AIzaSyBnIYXmksrjd0c7V2XwQ1DfsYTRFjrPBh4",

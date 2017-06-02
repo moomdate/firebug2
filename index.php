@@ -35,7 +35,16 @@
 				<div class="ui inverted divider"></div>
 				<p></p>
 				<h4 class="ui horizontal inverted divider"></h4>
-				<p><button class="ui button red">xxx</button></p>
+				<p></p>
+				<div class="ui horizontal segments">
+					<div class="ui center aligned segment ">
+						<h2 class="ui header">Relay1</h2>
+						<button class="ui inverted red button" id="relay1_off"  style="display: none">OFF</button>
+						<button class="ui inverted green button" id="relay1_on" style="display: none">ON</button>
+						
+					</div>
+
+				</div>
 			</div>
 		</div>
 		<div class="ui segment" id="dashboard">
@@ -46,8 +55,10 @@
 				<p></p>
 				<h4 class="ui horizontal inverted divider" >
 					Horizontal
+
 					<h2 id = 'head'></h2>
 					
+
 				</h4>
 				<canvas id="myChart"></canvas>
 			</div>
@@ -56,12 +67,9 @@
 		<div class="ui segment" id="provider">
 			<h3 class="ui header">Provider</h3>
 			<div class="ui  segment">
-				<p></p>
-				<div class="ui inverted divider"></div>
-				<p></p>
-				<h4 class="ui horizontal inverted divider">
-					Horizontal
-				</h4>
+				<div class="ui small image">
+				<img src="13413073_1612514969062012_2347532119015175250_n.jpg">
+				<p>xxx</p>
 			</div>
 		</div>
 		<div class="ui segment" id="mycontent">Content</div>

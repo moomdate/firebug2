@@ -38,6 +38,26 @@
 						<h2 class="ui header">Relay1</h2>
 						<button class="ui inverted red button" id="relay1_off"  style="display: none">OFF</button>
 						<button class="ui inverted green button" id="relay1_on" style="display: none">ON</button>
+					</div>
+
+					<div class="ui center aligned segment ">
+						<h2 class="ui header">Relay2</h2>
+						<button class="ui inverted red button" id="relay2_off"  style="display: none">OFF</button>
+						<button class="ui inverted green button" id="relay2_on" style="display: none">ON</button>
+						
+					</div>
+
+					<div class="ui center aligned segment ">
+						<h2 class="ui header">Relay3</h2>
+						<button class="ui inverted red button" id="relay3_off"  style="display: none">OFF</button>
+						<button class="ui inverted green button" id="relay3_on" style="display: none">ON</button>
+						
+					</div>
+
+					<div class="ui center aligned segment ">
+						<h2 class="ui header">Relay4</h2>
+						<button class="ui inverted red button" id="relay4_off"  style="display: none">OFF</button>
+						<button class="ui inverted green button" id="relay4_on" style="display: none">ON</button>
 						
 					</div>
 

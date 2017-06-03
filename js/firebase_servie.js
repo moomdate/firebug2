@@ -1,21 +1,34 @@
+
 console.log("helloo00000");
+
 (function(){
     var config = {
-    apiKey: "AIzaSyBnIYXmksrjd0c7V2XwQ1DfsYTRFjrPBh4",
-    authDomain: "showdata-27f44.firebaseapp.com",
-    databaseURL: "https://showdata-27f44.firebaseio.com",
-    projectId: "showdata-27f44",
-    storageBucket: "showdata-27f44.appspot.com",
-    messagingSenderId: "856643618548"
-  };
- firebase.initializeApp(config);
-    var head = document.getElementById('head');
-    var  object = firebase.database().ref();
-    var childSelete = object.child('text');
-      childSelete.on('value', snap => {
-	       var data = JSON.stringify(snap.val());
-	       head.innerHTML = data.replace(/^"(.*)"$/, '$1');
-		     console.log(snap.val());
-		 //console.log(snap.key);
-	});
+        apiKey: "AIzaSyBBJfI1xVF6yV4NEQaos6hkob14oagLs2c",
+        authDomain: "test-ce9c3.firebaseapp.com",
+        databaseURL: "https://test-ce9c3.firebaseio.com",
+        projectId: "test-ce9c3",
+        storageBucket: "test-ce9c3.appspot.com",
+        messagingSenderId: "453098043145"
+    };
+    firebase.initializeApp(config);
+    var relay1 = 'CH1';
+    const relaych1 = firebase.database().ref('Device/Relay').child(relay1);
+    relaych1.on('value', function(snapshot) {
+        var data = JSON.stringify(snapshot.val());
+        if(data == 1){
+         $("#relay1_on").show();
+         $("#relay1_off").hide();
+     }else{
+        $("#relay1_off").show();
+        $("#relay1_on").hide();
+    }
+});
+    const relaych1update = firebase.database().ref().child('Device/Relay/');
+    $("#relay1_on").click(function(){
+        relaych1update.update({ CH1:0});
+    });
+     $("#relay1_off").click(function(){
+        relaych1update.update({ CH1:1});
+    });
+
 }());

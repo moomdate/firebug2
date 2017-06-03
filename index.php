@@ -10,9 +10,6 @@
 	<title>FireBug</title>
 </head>
 <body>
-
-	
-	
 	<div class="ui top fixed menu">
 		<div class="item">
 			<img src="/images/logo.png">
@@ -41,6 +38,26 @@
 						<h2 class="ui header">Relay1</h2>
 						<button class="ui inverted red button" id="relay1_off"  style="display: none">OFF</button>
 						<button class="ui inverted green button" id="relay1_on" style="display: none">ON</button>
+					</div>
+
+					<div class="ui center aligned segment ">
+						<h2 class="ui header">Relay2</h2>
+						<button class="ui inverted red button" id="relay2_off"  style="display: none">OFF</button>
+						<button class="ui inverted green button" id="relay2_on" style="display: none">ON</button>
+						
+					</div>
+
+					<div class="ui center aligned segment ">
+						<h2 class="ui header">Relay3</h2>
+						<button class="ui inverted red button" id="relay3_off"  style="display: none">OFF</button>
+						<button class="ui inverted green button" id="relay3_on" style="display: none">ON</button>
+						
+					</div>
+
+					<div class="ui center aligned segment ">
+						<h2 class="ui header">Relay4</h2>
+						<button class="ui inverted red button" id="relay4_off"  style="display: none">OFF</button>
+						<button class="ui inverted green button" id="relay4_on" style="display: none">ON</button>
 						
 					</div>
 
@@ -55,6 +72,10 @@
 				<p></p>
 				<h4 class="ui horizontal inverted divider" >
 					Horizontal
+
+					<h2 id = 'head'></h2>
+					
+
 				</h4>
 				<canvas id="myChart"></canvas>
 			</div>
@@ -73,6 +94,5 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
 <script type="text/javascript" src='js/firebase_servie.js'></script>
-
 </body>
 </html>

@@ -28,34 +28,46 @@
 		<div class="ui segment " id="controlpanel">
 			<h3 class="ui header">Control Panel</h3>
 			<div class="ui  segment">
-				<p></p>
+				<p><h2 class="ui header">Relay Chanel</h2></p>
 				<div class="ui inverted divider"></div>
 				<p></p>
 				<h4 class="ui horizontal inverted divider"></h4>
 				<p></p>
 				<div class="ui horizontal segments">
 					<div class="ui center aligned segment ">
-						<h2 class="ui header">Relay1</h2>
+						<h2 class="ui header" id="nameRelay1" data-tooltip="Double click for edit name" data-inverted=""></h2>
+						<div class="ui input">
+							<input type="text" name="text" id="fieldNameRelay1" style="display: none">
+						</div>
 						<button class="ui inverted red button" id="relay1_off"  style="display: none">OFF</button>
 						<button class="ui inverted green button" id="relay1_on" style="display: none">ON</button>
 					</div>
 
 					<div class="ui center aligned segment ">
-						<h2 class="ui header">Relay2</h2>
+						<h2 class="ui header"  id="nameRelay2" data-tooltip="Double click for edit name" data-inverted=""></h2>
+						<div class="ui input">
+							<input type="text" name="text" id="fieldNameRelay2" style="display: none">
+						</div>
 						<button class="ui inverted red button" id="relay2_off"  style="display: none">OFF</button>
 						<button class="ui inverted green button" id="relay2_on" style="display: none">ON</button>
 						
 					</div>
 
 					<div class="ui center aligned segment ">
-						<h2 class="ui header">Relay3</h2>
+						<h2 class="ui header"  id="nameRelay3" data-tooltip="Double click for edit name" data-inverted=""></h2>
+						<div class="ui input">
+							<input type="text" name="text" id="fieldNameRelay3" style="display: none">
+						</div>
 						<button class="ui inverted red button" id="relay3_off"  style="display: none">OFF</button>
 						<button class="ui inverted green button" id="relay3_on" style="display: none">ON</button>
 						
 					</div>
 
 					<div class="ui center aligned segment ">
-						<h2 class="ui header">Relay4</h2>
+						<h2 class="ui header"  id="nameRelay4" data-tooltip="Double click for edit name" data-inverted=""></h2>
+						<div class="ui input">
+							<input type="text" name="text" id="fieldNameRelay4" style="display: none">
+						</div>
 						<button class="ui inverted red button" id="relay4_off"  style="display: none">OFF</button>
 						<button class="ui inverted green button" id="relay4_on" style="display: none">ON</button>
 						
@@ -85,14 +97,14 @@
 			<h3 class="ui header">Provider</h3>
 			<div class="ui  segment">
 				<div class="ui small image">
-				<img src="13413073_1612514969062012_2347532119015175250_n.jpg">
-				<p>xxx</p>
+					<img src="13413073_1612514969062012_2347532119015175250_n.jpg">
+					<p>xxx</p>
+				</div>
 			</div>
+			<div class="ui segment" id="mycontent">Content</div>
 		</div>
-		<div class="ui segment" id="mycontent">Content</div>
 	</div>
-</div>
-<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
-<script type="text/javascript" src='js/firebase_servie.js'></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+	<script type="text/javascript" src='js/firebase_servie.js'></script>
 </body>
 </html>

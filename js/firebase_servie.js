@@ -1,6 +1,3 @@
-
-console.log("helloo00000");
-
 (function(){
     var config = {
         apiKey: "AIzaSyBBJfI1xVF6yV4NEQaos6hkob14oagLs2c",

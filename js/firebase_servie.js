@@ -15,11 +15,11 @@
 //relay1
 const relaych1 = firebase.database().ref('Device/Relay').child(relay1);
 relaych1.on('value', function(snapshot) {
-    var data = JSON.stringify(snapshot.val());
-    if(data == 1){
-       $("#relay1_on").show();
-       $("#relay1_off").hide();
-   }else{
+ var data = JSON.stringify(snapshot.val());
+ if(data == 1){
+   $("#relay1_on").show();
+   $("#relay1_off").hide();
+}else{
     $("#relay1_off").show();
     $("#relay1_on").hide();
 }
@@ -95,7 +95,7 @@ $("#relay1_off").click(function(){
      relaychName1.on('value', function(snapshot) {
         //var data = JSON.stringify(snapshot.val());
         //console.log(data);
-        $("#nameRelay1").text(snapshot.val());
+        $("#nameRelay1,#nameRelay1_").text(snapshot.val());
         $("#fieldNameRelay1").val(snapshot.val());
     });
      const relaychName2 = firebase.database().ref('Device/RelayName').child(relay2);
@@ -103,22 +103,23 @@ $("#relay1_off").click(function(){
         //var data = JSON.stringify(snapshot.val());
         //console.log(data);
         $("#nameRelay2").text(snapshot.val());
-         $("#fieldNameRelay2").val(snapshot.val());
+        $("#fieldNameRelay2").val(snapshot.val());
     });
      const relaychName3 = firebase.database().ref('Device/RelayName').child(relay3);
      relaychName3.on('value', function(snapshot) {
         //var data = JSON.stringify(snapshot.val());
         //console.log(data);
         $("#nameRelay3").text(snapshot.val());
-         $("#fieldNameRelay3").val(snapshot.val());
+        $("#fieldNameRelay3").val(snapshot.val());
     });
      const relaychName4 = firebase.database().ref('Device/RelayName').child(relay4);
      relaychName4.on('value', function(snapshot) {
        // var data = JSON.stringify(snapshot.val());
         //console.log(data);
         $("#nameRelay4").text(snapshot.val());
-         $("#fieldNameRelay4").val(snapshot.val());
-    });
+        $("#fieldNameRelay4").val(snapshot.val());
+          $(".se-pre-con").fadeOut("slow");; //--loader
+       });
      ////////////////// name change /////////////
      $("#nameRelay1").dblclick(function(){  //ch 1 
         $("#fieldNameRelay1").show();
@@ -137,7 +138,7 @@ $("#relay1_off").click(function(){
         $("#fieldNameRelay2").show();
         $("#nameRelay2").hide();
     });
-     $("#fieldNameRelay2").keypress(function(e){
+       $("#fieldNameRelay2").keypress(function(e){
         if (e.which == 13) {
             $("#nameRelay2").show();
             $("#fieldNameRelay2").hide();
@@ -163,7 +164,7 @@ $("#relay1_off").click(function(){
         $("#fieldNameRelay4").show();
         $("#nameRelay4").hide();
     });
-     $("#fieldNameRelay4").keypress(function(e){
+      $("#fieldNameRelay4").keypress(function(e){
         if (e.which == 13) {
             $("#nameRelay4").show();
             $("#fieldNameRelay4").hide();
@@ -174,4 +175,4 @@ $("#relay1_off").click(function(){
     });
 
 
- }());
+  }());
